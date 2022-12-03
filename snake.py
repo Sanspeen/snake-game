@@ -18,7 +18,7 @@ class Snake:
             square = Turtle()
             square.penup()
             square.shape("square")
-            square.color("white")
+            square.color("green")
             square.goto(position)
             self.body_parts.append(square)
 
@@ -44,3 +44,6 @@ class Snake:
     def look_right(self):
         if round(self.head.heading()) != LEFT:
             self.head.setheading(RIGHT)
+
+    def hit_wall(self):
+        self.head.bye()
