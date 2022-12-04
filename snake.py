@@ -51,5 +51,4 @@ class Snake:
         if round(self.head.heading()) != LEFT:
             self.head.setheading(RIGHT)
 
-    def hit_wall(self):
-        self.head.bye()
+
